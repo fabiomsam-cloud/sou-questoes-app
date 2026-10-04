@@ -1,0 +1,1 @@
+function a(r){const i=Array.isArray(r==null?void 0:r.alternativas)?r.alternativas:Object.values((r==null?void 0:r.alternativas)||{}),t=(r==null?void 0:r.tipo)==="CERTO_ERRADO"||i.length===2&&i.every(n=>["Certo","Errado"].includes(String(n)));return i.map((n,l)=>({key:t?String(n):String.fromCharCode(65+l),value:String(n),mostrarLetra:!t}))}export{a as l};
